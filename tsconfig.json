@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2020",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "alwaysStrict": true,
+    "stictNullChecks": true,
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": { "@/*": ["./*"]}
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"] 
+}
