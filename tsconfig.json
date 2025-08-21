@@ -9,7 +9,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "alwaysStrict": true,
-    "stictNullChecks": true,
+    "strictNullChecks": true,
     "noImplicitAny": true,
     "outDir": "./dist",
     "allowJs": true,
