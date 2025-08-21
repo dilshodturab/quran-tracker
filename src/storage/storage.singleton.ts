@@ -1,9 +1,12 @@
-export class StorageSingleton {
-  private static instance: StorageSingleton;
+import { StorageFactory } from "./storage.factory";
+import { IStorageStrategy } from "./storage.strategy";
 
-  static getInstance(): StorageSingleton {
+export class StorageSingleton {
+  private static instance: IStorageStrategy;
+
+  static getInstance(): IStorageStrategy {
     if (!StorageSingleton.instance) {
-      StorageSingleton.instance = new StorageSingleton();
+      StorageSingleton.instance = StorageFactory.create("json");
     }
     return StorageSingleton.instance;
   }
