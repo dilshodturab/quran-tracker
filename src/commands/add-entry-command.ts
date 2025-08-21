@@ -9,8 +9,16 @@ export class EntryCommand implements ICommand {
   async execute() {
     const questions = await inquirer.prompt([
       { type: "input", name: "surah", message: "Enter Surah name" },
-      { type: "input", name: "fromAyah", message: "From Ayah" },
-      { type: "input", name: "toAyah", message: "To which Ayah?" },
+      {
+        type: "input",
+        name: "fromAyah",
+        message: "Which Ayah are you starting from?",
+      },
+      {
+        type: "input",
+        name: "toAyah",
+        message: "To which Ayah are you planning to memorize?",
+      },
     ]);
 
     const newEntry: IMemorizationProgress = {
