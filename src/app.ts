@@ -7,6 +7,7 @@ import { ShowEntriesCommand } from "./commands/show-entries-command";
 import { ExitCommand } from "./commands/exit-command";
 import { DeleteCommand } from "./commands/delete-entry-command";
 import { EditCommand } from "./commands/edit-entry-command";
+import { StatsCommand } from "./commands/statistics-command";
 
 const context = new Context(StorageSingleton.getInstance());
 const executor = new CommandExecutor();
@@ -40,6 +41,9 @@ async function bootstrap() {
       break;
     case "Show all records":
       await executor.run(new ShowEntriesCommand(context));
+      break;
+    case "Statistics":
+      await executor.run(new StatsCommand(context));
       break;
     case "Exit":
       await executor.run(new ExitCommand());
