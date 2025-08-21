@@ -1,8 +1,9 @@
+import { ICommand } from "@/core/command";
 import { Context } from "@/core/context";
 import { IMemorizationProgress } from "@/types/types";
 import inquirer from "inquirer";
 
-export class EntryCommand {
+export class EntryCommand implements ICommand {
   constructor(private context: Context) { }
 
   async execute() {
