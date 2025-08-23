@@ -1,4 +1,4 @@
-#Quran memorization tracker CLI program
+Quran memorization tracker CLI program
 To start using: 
 1. Clone this repository
 2. run `npm install`
