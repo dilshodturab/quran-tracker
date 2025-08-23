@@ -31,7 +31,7 @@ export class EditCommand implements ICommand {
       {
         type: "input",
         name: "surah",
-        message: `Ente new name for Surah ${entry.surah}`,
+        message: `Enter new name for Surah ${entry.surah}`,
         default: `${entry.surah}`,
       },
       {
